@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true"><layer-list>
+            <item android:drawable="@drawable/title_button_selected"/>
+            <item android:left="2dp"><bitmap  android:gravity="left" android:src="@drawable/comment_icon" />
+            </item>
+        </layer-list></item>
+    <item><layer-list>
+            <item android:drawable="@drawable/title_button_normal"/>
+            <item android:left="2dp"><bitmap android:gravity="left" android:src="@drawable/comment_icon" />
+            </item>
+        </layer-list></item>
+
+</selector>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="登录" android:onClick="onClick_Login" />
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="获取联系人列表" android:onClick="onClick_ContactList" />
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="发送聊天消息" android:onClick="onClick_SendChatMessage" />
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="监听所有收到的消息" android:onClick="onClick_ChatMessageListener" />
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="array_toolbar_btn_text">
+        <item>首页</item>
+        <item>信息</item>
+        <item>我的资料</item>
+        <item>广场</item>
+        <item>更多</item>
+    </string-array>
+
+    <array name="array_toolbar_btn_image_resource">
+        <item>@drawable/icon_home</item>
+        <item>@drawable/icon_message</item>
+        <item>@drawable/icon_selfinfo</item>
+        <item>@drawable/icon_square</item>
+        <item>@drawable/icon_more</item>
+    </array>
+    <array name="array_toolbar_btn_id">
+        <item>@id/button_home</item>
+        <item>@id/button_message</item>
+        <item>@id/button_selfinfo</item>
+        <item>@id/button_square</item>
+        <item>@id/button_more</item>
+    </array>
+
+</resources>

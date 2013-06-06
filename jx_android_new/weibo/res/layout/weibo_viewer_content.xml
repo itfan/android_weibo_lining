@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearlayout_weibo_list_item"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageview_profile_image"
+                android:layout_width="61dp"
+                android:layout_height="61dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/portrait" />
+
+            <ImageView
+                android:id="@+id/imageview_verified"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="right|bottom"
+                android:src="@drawable/v"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textview_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textview_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="all"
+                android:textColor="#000"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/linearlayout_inside_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/content_border"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/textview_retweetdetail_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:autoLink="all"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageview_retweetdetail_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/pic_loading"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/button_retweetdetail_forward"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/forward_retweetdetail_background"
+                        android:gravity="right"
+                        android:paddingRight="20dp"
+                        android:textColor="#00C" android:textSize="10sp"/>
+
+                    <Button
+                        android:id="@+id/button_retweetdetail_comment"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/comment_retweetdetail_background"
+                        android:gravity="right"
+                        android:paddingRight="20dp"
+                        android:textColor="#00C"  android:textSize="10sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageview_status_image"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/pic_loading"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/button_forward"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/forward_background"
+                    android:textColor="#00C" />
+
+                <Button
+                    android:id="@+id/button_comment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/comment_background"
+                    android:textColor="#00C" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textview_source"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="10dp"
+                android:linksClickable="false"
+                android:textColor="#000"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

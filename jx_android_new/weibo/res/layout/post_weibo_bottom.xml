@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/bottom_height"
+    android:background="@drawable/titlebar_bg"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:id="@+id/framelayout_is_comment"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:visibility="gone" >
+
+        <CheckBox
+            android:id="@+id/checkbox_is_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="同时作为评论发布"
+            android:textColor="#000"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/checkbox_post_weibo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="同时发一条微博"
+            android:textColor="#000"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout_insert_pic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageview_insert_pic"
+                android:layout_width="@dimen/bottom_btn_size"
+                android:layout_height="@dimen/bottom_btn_size"
+                android:src="@drawable/btn_insert_pic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_insert_topic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/bottom_btn_size"
+                android:layout_height="@dimen/bottom_btn_size"
+                android:src="@drawable/btn_insert_topic" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_insert_at"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/bottom_btn_size"
+                android:layout_height="@dimen/bottom_btn_size"
+                android:src="@drawable/btn_insert_at" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_insert_face"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/bottom_btn_size"
+                android:layout_height="@dimen/bottom_btn_size"
+                android:src="@drawable/btn_insert_face" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

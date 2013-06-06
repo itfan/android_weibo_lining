@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout_message"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:visibility="invisible" >
+
+    <include layout="@layout/message_title" />
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <ListView
+            android:id="@+id/listview_message_at"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFF"
+            android:cacheColorHint="#00000000"
+            android:divider="#FCCC"
+            android:dividerHeight="1px"
+            android:fastScrollEnabled="true" />
+
+        <ListView
+            android:id="@+id/listview_message_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFF"
+            android:cacheColorHint="#00000000"
+            android:divider="#FCCC"
+            android:dividerHeight="1px"
+            android:fastScrollEnabled="true" />
+
+        <ListView
+            android:id="@+id/listview_message_favorite"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#FFFF"
+            android:cacheColorHint="#00000000"
+            android:divider="#FCCC"
+            android:dividerHeight="1px"
+            android:fastScrollEnabled="true" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/frags">
+
+    <fragment class="mobile.android.jx.hcgallery.TitlesFragment"
+            android:id="@+id/frag_title"
+            android:visibility="gone"
+            android:layout_marginTop="?android:attr/actionBarSize"
+            android:layout_width="@dimen/titles_size"
+            android:layout_height="match_parent" />
+
+    <fragment class="mobile.android.jx.hcgallery.ContentFragment"
+            android:id="@+id/frag_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    
+</LinearLayout>

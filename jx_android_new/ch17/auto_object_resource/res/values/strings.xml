@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, ObjectResource!</string>
+    <string name="app_name">自动存取对象资源</string>
+</resources>

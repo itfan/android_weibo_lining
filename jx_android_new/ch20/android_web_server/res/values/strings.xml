@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, WebService!</string>
+    <string name="app_name">Android版Web服务器，获得Wifi信息</string>
+</resources>

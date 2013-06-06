@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/title_height"
+    android:background="@drawable/titlebar_bg" >
+
+    <Button
+        android:id="@+id/imageview_back"
+        android:layout_width="@dimen/title_button_height"
+        android:layout_height="@dimen/title_button_width"
+        android:layout_gravity="left|center_vertical"
+        android:background="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textview_post_weibo_title"
+        android:layout_width="@dimen/title_text_width"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/post_weibo_title"
+        android:textColor="@color/title_text_color"
+        android:textSize="@dimen/title_text_size" />
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="66dp"
+        android:layout_height="36dp"
+        android:layout_gravity="right|center_vertical"
+        android:background="@drawable/title_button"
+        android:gravity="center"
+        android:text="@string/send"
+        android:textSize="11sp" />
+
+</FrameLayout>

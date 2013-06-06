@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearlayout_home"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <include layout="@layout/post_weibo_title" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <EditText
+                android:id="@+id/edittext_weibo_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#FFFF"
+                android:gravity="left|top"
+                android:hint="说点什么吧..." />
+
+            <ImageView
+                android:id="@+id/imageview_insert_pic_min_viewer"
+                android:layout_width="@dimen/pic_min_viewer_width"
+                android:layout_height="@dimen/pic_min_viewer_width"
+                android:layout_gravity="left|bottom"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <include layout="@layout/post_weibo_bottom" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/framelayout_input_board"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:background="#CCC"
+        android:visibility="gone" >
+
+        <include layout="@layout/face_list" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <include layout="@layout/weibo_viewer_title" />
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        layout="@layout/weibo_viewer_content" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@drawable/toolbar_bg_middle"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/linearlayout_comment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/toolbar_btn"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/toolbar_btn_width"
+                android:layout_height="@dimen/toolbar_btn_width"
+                android:layout_gravity="center_horizontal"
+                android:clickable="false"
+                android:src="@drawable/toolbar_comment_icon" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="评论"
+                android:textColor="@color/toolbar_btn_text_color"
+                android:textSize="@dimen/toolbar_btn_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_forward"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/toolbar_btn"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/toolbar_btn_width"
+                android:layout_height="@dimen/toolbar_btn_width"
+                android:layout_gravity="center_horizontal"
+                android:clickable="false"
+                android:src="@drawable/toolbar_forward_icon" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="转发"
+                android:textColor="@color/toolbar_btn_text_color"
+                android:textSize="@dimen/toolbar_btn_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_fav"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/toolbar_btn"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/toolbar_btn_width"
+                android:layout_height="@dimen/toolbar_btn_width"
+                android:layout_gravity="center_horizontal"
+                android:clickable="false"
+                android:src="@drawable/toolbar_fav_icon" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="收藏"
+                android:textColor="@color/toolbar_btn_text_color"
+                android:textSize="@dimen/toolbar_btn_text_size" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_unfav"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/toolbar_btn"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="@dimen/toolbar_btn_width"
+                android:layout_height="@dimen/toolbar_btn_width"
+                android:layout_gravity="center_horizontal"
+                android:clickable="false"
+                android:src="@drawable/toolbar_unfav_icon" />
+
+            <TextView
+                android:id="@+id/textview_favorite"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="取消收藏"
+                android:textColor="@color/toolbar_btn_text_color"
+                android:textSize="@dimen/toolbar_btn_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

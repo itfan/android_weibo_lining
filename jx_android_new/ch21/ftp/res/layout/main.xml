@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<Button android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="连接FTP服务器"
+			android:onClick="onClick_ConnectFTP" />
+		<Button android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="断开FTP服务器连接"
+			android:onClick="onClick_CloseConnection" />
+		<Button android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="获取当前工作目录"
+			android:onClick="onClick_CurrentWorkingDirectory" />
+		<Button android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="列出所有的文件和目录"
+			android:onClick="onClick_ListAll" />
+		<Button android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="改变当前工具目录"
+			android:onClick="onClick_ChangeCurrentWorkingDirectory" />
+		<Button android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="建立新目录"
+			android:onClick="onClick_MakeDirectory" />
+		<Button android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="重命名目录"
+			android:onClick="onClick_RenameDirectory" />
+		<Button android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="删除目录"
+			android:onClick="onClick_RemoveDirectory" />
+		<Button android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="上传文件"
+			android:onClick="onClick_UploadFile" />
+		<Button android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="重命名文件"
+			android:onClick="onClick_RenameFile" />
+		<Button android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="下载文件"
+			android:onClick="onClick_DownloadFile" />
+		<Button android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:text="删除文件"
+			android:onClick="onClick_DeleteFile" />
+	</LinearLayout>
+</ScrollView>
+ 

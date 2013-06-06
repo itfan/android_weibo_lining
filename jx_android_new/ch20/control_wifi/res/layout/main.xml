@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="打开Wifi设置页面"
+		android:onClick="onClick_OpenWifiSettings" />
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="开启Wifi"
+		android:onClick="onClick_StartWifi" />
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="关闭Wifi"
+		android:onClick="onClick_CloseWifi" />
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="开始扫描"
+		android:onClick="onClick_StartScan" />
+</LinearLayout>

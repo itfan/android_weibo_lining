@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="button_home" type="id"/>
+    <item name="button_message" type="id"/>
+    <item name="button_selfinfo" type="id"/>
+    <item name="button_square" type="id"/>
+    <item name="button_more" type="id"/>
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1" >
+
+        <include layout="@layout/home" />
+
+        <include layout="@layout/message" />
+
+        <include layout="@layout/selfinfo" />
+
+        <include layout="@layout/square" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayout_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@drawable/toolbar_bg_middle"
+        android:orientation="horizontal" >
+
+        <!-- 内容动态加载 -->
+    </LinearLayout>
+
+</LinearLayout>

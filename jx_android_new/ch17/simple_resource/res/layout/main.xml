@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="显示新窗口"
+		android:onClick="onClick_ShowActivity" />
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="设置值"
+		android:onClick="onClick_SetValue" />
+	<Button android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:text="显示值"
+		android:onClick="onClick_ShowValue" />
+</LinearLayout>
